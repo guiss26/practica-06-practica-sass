@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;500;700;900&family=Noto+Sans:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Raleway:wght@200;300;400;500&display=swap');
+
+// font-family: 'Montserrat', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
+$primary: #3cb4ab;
+
+$enable-negative-margins: true;//para el margen negativo
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.nav-form-control{
+    background-color: $primary;
+    border-color: $light;
+}
+
+header{
+    background-image: url('/img/header.jpg');
+    height: 200px;
+
+    //para centrar la imagen y que no se distorsione
+    background-size: cover;
+    background-position: center;
+}
+
+@include media-breakpoint-up(md) { 
+    header{
+    height: 400px;
+    }
+}
+
